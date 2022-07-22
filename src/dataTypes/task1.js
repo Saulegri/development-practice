@@ -1,0 +1,12 @@
+let s = 'Saule';
+let a = 2;
+let u = null;
+let l;
+let e = 'Grisinaite';
+let g = 6;
+console.log(`Initial value:${s}, variable type: ${typeof s}`);
+console.log(`Initial value:${a}, variable type: ${typeof a}`);
+console.log(`Initial value:${u}, variable type: ${typeof u}`);
+console.log(`Initial value:${l}, variable type: ${typeof l}`);
+console.log(`Initial value:${e}, variable type: ${typeof e}`);
+console.log(`Initial value:${g}, variable type: ${typeof g}`);
