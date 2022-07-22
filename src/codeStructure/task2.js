@@ -1,0 +1,2 @@
+const a = 5, b = 4, c = a - b
+console.log(b - c);
