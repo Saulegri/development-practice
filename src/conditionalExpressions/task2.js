@@ -1,12 +1,9 @@
-if value(typeof === "boolean"){
+if (typeof value === "boolean") {
     console.log(`Variable is boolean : ${value}`);
-}
-if value(typeof === "number"){
+} else if (typeof value === "number") {
     console.log(`Variable is a number. It's square is: ${value}`);
-}
-if value(typeof === "string"){
+} else if (typeof value === "string") {
     console.log(`Variable is a string:${value}`);
-}
-else {
+} else {
     console.log(`Variable type is: ${value}`);
 }
