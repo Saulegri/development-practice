@@ -2,6 +2,6 @@ function binaryFn(a, b) {
     return (a * b);
 }
 function fn(a, b, c) {
-    return (a, b, c(binaryFn));
+    return (a, b, binaryFn);
     c();
 }
