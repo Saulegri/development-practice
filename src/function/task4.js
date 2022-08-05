@@ -1,7 +1,7 @@
 function binaryFn(a, b) {
-    return (a * b);
+    return a * b;
 }
 function fn(a, b, c) {
-    return (a, b, binaryFn);
-    c();
+    return c(a, b);
 }
+fn(3, 8, binaryFn)
