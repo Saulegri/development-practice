@@ -1,5 +1,7 @@
 function add(a, b) {
     return function () {
-        return (a + b)
+        return (a + b);
     }
 }
+const result = add();
+result();
