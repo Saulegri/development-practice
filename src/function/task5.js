@@ -1,11 +1,8 @@
-function fn1() {
-    function fn2(num) {
-        return num;
+function fn(num) {
+    function fn1() {
+        console.log(num)
     }
-    return fn2;
-
+    return fn();
 }
-const fn = fn1()
 const fnResult = fn(5);
-
-
+fnResult();

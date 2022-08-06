@@ -1,4 +1,5 @@
 function add(a, b) {
-    return a + b;
+    return function () {
+        return (a + b)
+    }
 }
-add()
