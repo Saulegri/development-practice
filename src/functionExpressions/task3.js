@@ -5,5 +5,3 @@ fn2(fn())
 console.log(fn2(fn()))
 
 
-
-
