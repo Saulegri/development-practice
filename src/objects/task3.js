@@ -10,5 +10,5 @@ const academy = {
 
 const complexObject = { ...academy, ...person }
 
-let result = (complexObject) => (console.log(person.name + '-' + academy.title));
+let result = (complexObject) => (console.log(complexObject.name + '-' + complexObject.title));
 result(complexObject)
