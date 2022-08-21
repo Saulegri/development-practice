@@ -7,7 +7,8 @@ const academy = {
 console.log(academy.title)
 console.log(academy['course'])
 
-const propertyName = ['mentorship']
+const propertyName = 'mentorship'
+console.log(academy[propertyName])
 
 delete academy.course
 console.log(academy.course)

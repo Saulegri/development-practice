@@ -1,12 +1,14 @@
-const complexObject = {}
-const person = Object.assign(complexObject);
-person.name = 'Saule '
-person.email = 'saule@saule.lt'
-person.birthDate = '2020 20 20'
+const person = {
+    name: 'Saule ',
+    email: 'saule@saule.lt',
+    birthDate: '2020 20 20'
+}
+const academy = {
+    title: ' devMentor',
+    numberOfStudents: '22'
+}
 
-const academy = Object.assign(complexObject);
-academy['title'] = ' devMentor'
-academy['numberOfStudents'] = '22'
+const complexObject = { ...academy, ...person }
 
 let result = (complexObject) => (console.log(person.name + '-' + academy.title));
 result(complexObject)
