@@ -1,5 +1,5 @@
 const person = {
-    name: 'Saule ',
+    name: 'Saule',
     email: 'saule@saule.lt',
     birthDate: '2020 20 20'
 }
@@ -8,7 +8,11 @@ const academy = {
     numberOfStudents: '22'
 }
 
-const complexObject = { ...academy, ...person }
+const complexObject = {
+    name: person.name,
+    title: academy['title']
+}
 
-let result = (complexObject) => (console.log(complexObject.name + '-' + complexObject.title));
+
+const result = (complexObject) => (console.log(complexObject.name + ' - ' + complexObject.title));
 result(complexObject)

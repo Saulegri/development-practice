@@ -5,5 +5,12 @@ let human = {
     isDeveloper: false
 }
 
-let printHuman = (human) => console.log(`${human.firstName} ${human.lastName} ${human.age}` + ' is not a developer')
+let printHuman = (human) => {
+    if (human['isDeveloper'] === true) {
+        console.log(`${human.firstName} ${human.lastName} ${human.age}` + ' is a developer')
+    } else if (human['isDeveloper'] === false) {
+        console.log(`${human.firstName} ${human.lastName} ${human.age}` + ' is not a developer')
+    }
+
+}
 printHuman(human)
