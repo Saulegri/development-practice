@@ -1,10 +1,10 @@
 const arrayOne = [{ id: 4, name: 'Lecturer' }, { id: 3, title: 'devMentor' }, { id: 5 }];
-const arrayTwo = { id: 3 };
+const obj = { id: 3 };
 
 arrayOne.forEach((element, index) => {
-    if (element.id === arrayTwo.id) {
-        arrayOne[index] = arrayTwo;
+    if (element.id === obj.id) {
+        arrayOne[index] = obj;
     }
 });
-console.log(arrayOne);
+console.log(arrayOne, obj);
 
