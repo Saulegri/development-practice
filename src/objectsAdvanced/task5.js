@@ -3,14 +3,10 @@ const person = {
     surname: "Gri",
     age: "10",
     birthDate: "2020",
-    fullName: function () {
-        this.fullName = this.name + ' ' + this.surname;
-    },
-    nickName: function () {
-        this.nickName = this.surname + ' ' + this.age;
-    }
 };
 
-person.fullName()
-person.nickName()
-console.log('fullName:' + `${person.fullName}` + ' nickName:' + `${person.nickName}`)
+const fn = (person) => ({
+    fullName: person.name + ' ' + person.surname,
+    nickName: person.surname + person.age
+});
+console.log(fn(person))
