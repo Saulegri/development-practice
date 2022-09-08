@@ -1,6 +1,7 @@
-const fn = (obj) => {
-    const newObj = { ...obj, surname: 'lecturer' }
-    console.log(newObj);
-}
-fn({ name: 'Rutenis', surname: 'Turcinas', age: 33 }, 'surname', 'lecturer');
+const obj = { name: 'Rutenis', surname: 'Turcinas', age: 33 };
+const field = 'surname';
+const value = 'lecturer';
+const fn = (obj, field, value) => ({ ...obj, surname: 'lecturer' })
+
+console.log(fn(obj, field, value));
 

@@ -1,6 +1,8 @@
-const fn = (objectA, objectB) => {
-    const object = { ...objectA, ...objectB };
-    console.log(object);
-}
 
-fn()
+const objectA = { name: 'Saule' };
+const objectB = { surname: 'Grisinaite' };
+const fn = (objectA, objectB) => ({ ...objectA, ...objectB });
+
+console.log(fn(objectA, objectB));
+
+
