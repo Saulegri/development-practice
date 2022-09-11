@@ -2,7 +2,7 @@ const arrayOne = [{ name: 'Tomas', age: 15 }, { name: 'Erika', age: 22 }, { name
 
 const count = {};
 
-arrayOne.map(a => count[a.name] = (count[a.name] || 0) + 1);
+arrayOne.forEach(a => count[a.name] = (count[a.name] || 0) + 1);
 console.log(count)
 
 
